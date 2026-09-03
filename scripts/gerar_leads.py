@@ -30,7 +30,7 @@ import argparse, csv, json, os, re, sys, time, unicodedata, urllib.request, urll
 #   3. arquivo local `apify_tokens.local` (ao lado deste script, NAO versionado)
 #      -> um token por linha; escolhe o de maior saldo.
 # Quando ha varios candidatos, o script usa o que ainda tem orcamento no mes
-# (a conta do time `blacksalesmed` costuma estourar o limite de 5 USD).
+# (contas free do Apify estouram o teto de ~5 USD/mes — deixe uma reserva na lista).
 # ---------------------------------------------------------------------------
 API = "https://api.apify.com/v2"
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) leads-sdr/1.0"
