@@ -1,0 +1,24 @@
+{
+  "skill_name": "lista-leads-medicos",
+  "notes": "Skill depende de chamadas ao vivo no Apify (custo real ~USD 0,10-0,30 por lista + minutos por run). Por isso a validacao e feita por smoke-tests reais + review humana, e nao pelo benchmark multi-subagent (que multiplicaria custo/tempo por rodar with_skill + baseline).",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "puxa 20 endocrinologistas na Tijuca (Rio de Janeiro) pro time de SDR prospectar, com instagram e telefone",
+      "expected_output": "Google Sheets no Drive com ~20 endocrinologistas de Tijuca/RJ, colunas preenchidas (nome, categoria, @, site, telefone, endereco, nota Google, avaliacoes); coluna Match indica de onde veio cada IG; fonte Google recomendada pela riqueza de contato.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "monta uma lista de 15 ginecologistas de estetica intima em Belo Horizonte, quero partir do instagram pra ver seguidores",
+      "expected_output": "Fonte Instagram; ~15 perfis de gineco/estetica intima de BH com seguidores; cada um cruzado com o Google (nota + nº de avaliacoes + endereco quando existe ficha). Match=busca onde casou por nome.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "preciso de leads de dermatologistas em Ipanema pro comercial, uns 10, com whatsapp e nota do google",
+      "expected_output": "Google Sheets com ~10 dermatos de Ipanema/RJ; WhatsApp/telefone e Total Score preenchidos; tentativa de achar o Instagram de cada um.",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# segredos — nunca versionar
+scripts/apify_tokens.local
+*.local
+.env
+# caches / saidas
+__pycache__/
+*.pyc
+*.csv
+leads-*.csv
